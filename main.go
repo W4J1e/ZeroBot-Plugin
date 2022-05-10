@@ -83,7 +83,7 @@ var (
 		"* Copyright © 2020 - 2021 FloatTech. All Rights Reserved.",
 		"* Project: https://github.com/FloatTech/ZeroBot-Plugin",
 	}
-	nicks  = []string{"ATRI", "atri", "亚托莉", "アトリ"}
+	nicks  = []string{"ATRI", "atri", "亚托莉", "马嘉琪"}
 	banner = strings.Join(contents, "\n")
 	token  *string
 	url    *string
@@ -103,9 +103,9 @@ func init() {
 	// 直接写死 AccessToken 时，请更改下面第二个参数
 	token = flag.String("t", "", "Set AccessToken of WSClient.")
 	// 直接写死 URL 时，请更改下面第二个参数
-	url = flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
+	url = flag.String("u", "http://127.0.0.1:6700", "Set Url of WSClient.")
 	// 默认昵称
-	adana = flag.String("n", "椛椛", "Set default nickname.")
+	adana = flag.String("n", "马嘉琪", "Set default nickname.")
 	prefix = flag.String("p", "/", "Set command prefix.")
 
 	flag.Parse()
